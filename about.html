@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<title>About Me</title>
+<link rel= 'stylesheet' href='styles.css'>
+</head>
+<body>
+    <div class= 'container'>
+        <div class="nav-wrapper">
+            <div class="left-side"></div>
+            <div class="center">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="work.html">MY WORK</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="about.html">ABOUT ME</a>
+                </div>
+            </div>
+            <div class="right-side">ROWAN CHASE</div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="welcome-wrapper">
+                <div class="title">
+                    <div>About Me</div>
+                </div>
+                <div class="subtitle">
+                    <div>If you're interested in some basic information about me, my hobbies, or want to contact me, keep reading!</div>
+                </div>
+            </div>
+                <div class="topic-block-left-img">
+
+                    <div class="left-side">
+                        <div class="topic-img-wrapper">
+                            <img src=""/>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="topic-text-wrapper">
+                            <div>My favorite food is peach pie</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="topic-block-right-img">
+
+                    <div class="left-side">
+                        <div class="topic-text-wrapper">
+                            <div>
+                                <div>You can contact me at:</div>
+                                <div>rowanchase@gmail.com</div>
+                                <div>992-526-1347</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="topic-img-wrapper">
+                            <img src="pictures/email.jpg"/>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<!--this is a test comment-->
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<title>My Work</title>
+<link rel= 'stylesheet' href='styles.css'>
+</head>
+<body>
+    <div class= 'container'>
+        <div class="nav-wrapper">
+            <div class="left-side"></div>
+            <div class="center">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="work.html">MY WORK</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">ABOUT ME</a>
+                </div>
+            </div>
+            <div class="right-side">ROWAN CHASE</div>
+        </div>
+
+    <div class="content-wrapper">
+        <div class="welcome-wrapper">
+            <div class="title">
+                <div>My Accomplishments</div>
+            </div>
+            <div class="subtitle">
+                <div>The past 17 years of my life have given me many experiences and opportunities. On this page, you will find information about notable achievments and awards that I have earned.</div>
+            </div>
+        </div>
+        <div class="topic-block-wrapper">
+            <div class="topic-block-left-img">
+                <div class="left-side">
+                    
+                    <div class="carousel-container">
+
+                        <div class="topic-img-wrapper mySlides">
+                            <img src="" alt="">
+                            <div class="img-caption"></div>
+                        </div>
+                        <div class="topic-img-wrapper mySlides">
+                            <img src="pictures/FTC-Qualifier.jpg" alt="">
+                            <div class="img-caption"></div>
+                        </div>
+                        <div class="topic-img-wrapper mySlides">
+                            <img src="pictures/FTC-Canton.jpg" alt="">
+                            <div class="img-caption"></div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    </div>
+
+                </div>
+
+                <div class="right-side">
+                    <div class="topic-text-wrapper">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-block-wrapper">
+            <div class="topic-block-right-img">
+                <div class="left-side">
+                    <div class="topic-text-wrapper">
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    
+                    <div class="topic-img-wrapper">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-block-wrapper">
+            <div class="topic-block-left-img">
+                <div class="left-side">
+                    <div class="topic-img-wrapper">
+                        <a href="">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="topic-text-wrapper">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-block-right-img">
+            <div class="left-side">
+                <div class="topic-text-wrapper">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                
+                <div class="topic-img-wrapper">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+</body>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</html>
