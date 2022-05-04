@@ -14,6 +14,9 @@ body {
  */
     background-color: #A7C7E7;
 }
+img {
+    border-radius: 15px;
+}
 header {
     
     top: 0px;
@@ -25,7 +28,7 @@ header {
     padding: 20px;
     padding-left: 35px;
     padding-right: 0px;
-    background-color: #747E8B;
+    background-color: rgba(135, 135, 135, 0);
 }
 
 header .logo{
@@ -162,6 +165,10 @@ padding-bottom: 25px;
 .social-icon > a{
     width: 50px;
 }
+.Rowan-pic > img{
+    border: 1px blue solid;
+}
+
 /*footer Styles*/
 .footer-wrapper{
     display: grid;
