@@ -12,7 +12,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 /*     background-image: url("pictures/background8.webp");
  */
-    background-color: #A7C7E7;
+    background-color: #ADC6F8;
 }
 img {
     border-radius: 15px;
@@ -28,24 +28,23 @@ header {
     padding: 20px;
     padding-left: 35px;
     padding-right: 0px;
-    background-color: rgba(135, 135, 135, 0);
+    background-color: transparent
 }
 
 header .logo{
     position: relative;
     color: black;
     text-decoration: none;
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 19px;
+    font-weight: bold;font-family: 'poppins';
 }
 
 header ul{
     position: relative;
-    display: flex;
-    
-    
+    display: flex;  
     padding: 0px 50px;
-flex-direction: row;}
+    flex-direction: row;
+}
 
 header ul li{
     position: relative;
@@ -59,11 +58,36 @@ header ul li a{
     text-decoration: none;
     color: black;
     font-size: 18.5px;
+    font-family: 'Raleway';
 }
 
 footer{
-    background-color: rgba(40, 40, 40, 0.25);
+    background-color: #CCDCEF;
 }
+
+.active-link{
+    text-decoration: underline;
+}
+
+.highlight--green{
+    background-color: lightgreen;
+}
+
+.italisize{
+    font-style: italic;
+}
+
+.highlight--yellow{
+    background-color: yellow;
+}
+
+
+.nav-subtitle{
+    display: flex;
+    flex-direction: row;
+    
+font-size: 17px;font-family: 'Poppins';}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -98,13 +122,13 @@ footer{
     display: flex;
     justify-content: right;
     align-items: center;
-}
+padding-bottom: 0px;}
 
 /*Home Page Welcome Styles*/
 .hello{
-    font-size: 23px;
+    font-size: 16px;
     
-}
+font-family: 'Playfair Display';font-style: italic;font-weight: bold;;}
 
 .welcome-wrapper {
     display: flex;
@@ -115,7 +139,7 @@ footer{
     display: flex;
     justify-content: left;
     align-content: center;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     padding-bottom: 5px;
     font-family: 'Caudex';
@@ -126,9 +150,9 @@ footer{
     flex-direction: row;
     justify-content: left;
     align-content: center;
-    font-size: 23px;
+    font-size: 16px;
     font-weight: normal;
-}
+font-family: 'Poppins';}
 .welcome-wrapper > .subtitle > *{
     width: 70%;
     text-align: left;
@@ -137,16 +161,19 @@ footer{
 .learn-more{
 padding-bottom: 25px;
 }
+.Rowan-pic{
+    padding-bottom: 0px;
+}
 .Rowan-pic > img{
-    width: 700px;
+    width: 770px;
     height: auto;
 }
 /*Social Media & more icon styles*/
 .learn-more > button{
-    width: 150px;
+    width: 175px;
     height: 40px;
-    border-radius: 10px;
-}
+    border-radius: 5px;
+font-family: 'Caudex';font-size: 14px;background-color: #B0E0B2;border: transparent;}
 .media-buttons{
     display: flex;
     flex-direction: row;
@@ -154,6 +181,15 @@ padding-bottom: 25px;
     padding: 20px;
     padding-left: 0px;
 }
+.footer-media-buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+    
+    justify-items: right;align-self: center;justify-self: center;padding: 14px;
+    
+justify-content: center;align-content: center;}
 
 .social-icon > img{
     height: auto;
@@ -180,9 +216,6 @@ padding-bottom: 25px;
     padding-left: 70px;
     align-items: center;
 }
-.footer-left > div{
-    font-size: 20px;
-}
 
 .footer-right{
     display: flex;
@@ -190,9 +223,27 @@ padding-bottom: 25px;
     padding-right: 70px;
     align-items: center;
 }
-.footer-right > div{
-    font-size: 20px;
+.footer-title{
+    color: #867CB8;
+    font-size: 30px;
+    font-family: 'Pridi';
 }
+
+.footer-email{    
+    font-size: 18px;
+    color: #59527A;
+    font-family: 'Pridi';
+}
+
+.footer-number{
+    color: #59527A;
+    font-size: 16px;
+    font-family: 'Pridi';
+}
+
+.footer-location{
+
+color: #59527A;}
 
 /*Topic Block Styles*/
 .topic-block-wrapper{
@@ -295,4 +346,61 @@ padding-bottom: 25px;
 .topic-text-wrapper > *{
     font-size: 21px;
     text-align: center;
+}
+
+/*Resume page styles*/
+.rectangle{
+    height: 115px;
+    width: 523px;
+    background-color: rgba(138, 192, 140, 1);
+    
+z-index: -1;}
+
+.resume-topic-block-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px;
+    padding-left: 275px;
+    padding-right: 275px;
+    padding-top: 80px;
+}
+
+.resume-topic-block-title{
+    position: relative;
+}
+
+.resume-topic-block-title .rectangle{
+    position: absolute;
+    top: -16px;
+    left: -275px;
+}
+
+.resume-topic-block-text{
+    padding-bottom: 17px;
+}
+
+.title-text{
+    font-family: 'Poppins';
+font-size: 50px;padding-bottom: 77px;}
+
+.date-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.list-title{
+    font-family: 'Poppins';
+    font-size: 22px;
+    padding: 0px;
+    font-weight: bold;
+}
+.resume-list ul{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.generic-text{
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif;
 }
