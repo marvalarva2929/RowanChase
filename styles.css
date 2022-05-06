@@ -6,6 +6,7 @@ body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
     scrollbar-width: 0;
+    position: relative;
 }
 body {
     margin: 0px;
@@ -63,6 +64,15 @@ header ul li a{
 
 footer{
     background-color: #CCDCEF;
+    height: 225px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-content: center; */
+    /* justify-content: space-evenly; */
+align-items: center;justify-items: center;}
+
+a{
+    cursor:pointer;
 }
 
 .active-link{
@@ -70,7 +80,7 @@ footer{
 }
 
 .highlight--green{
-    background-color: lightgreen;
+    background-color: rgba(138, 192, 140, 0.5);
 }
 
 .italisize{
@@ -78,7 +88,7 @@ footer{
 }
 
 .highlight--yellow{
-    background-color: yellow;
+    background-color: rgba(245, 245, 83, 0.5);
 }
 
 
@@ -91,6 +101,7 @@ font-size: 17px;font-family: 'Poppins';}
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    z-index: 0;
 }
 .content-wrapper{
     padding-top: 0px;
@@ -98,6 +109,8 @@ font-size: 17px;font-family: 'Poppins';}
     padding-right: 0px;
     min-height: max-content;
     z-index: -1;
+    position: relative;
+    z-index: 1;
 }
 .placement-text{
     padding-top: 200px;
@@ -153,27 +166,37 @@ font-family: 'Playfair Display';font-style: italic;font-weight: bold;;}
     font-size: 16px;
     font-weight: normal;
 font-family: 'Poppins';}
+
 .welcome-wrapper > .subtitle > *{
     width: 70%;
     text-align: left;
 }
 
 .learn-more{
-padding-bottom: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
 }
+
 .Rowan-pic{
     padding-bottom: 0px;
 }
+
 .Rowan-pic > img{
     width: 770px;
     height: auto;
 }
+
 /*Social Media & more icon styles*/
-.learn-more > button{
+.learn-more > a > button{
     width: 175px;
     height: 40px;
     border-radius: 5px;
-font-family: 'Caudex';font-size: 14px;background-color: #B0E0B2;border: transparent;}
+    font-family: 'Caudex';
+    font-size: 14px;
+    background-color: #B0E0B2;
+    border: transparent;
+    cursor: pointer;
+}
 .media-buttons{
     display: flex;
     flex-direction: row;
@@ -200,6 +223,7 @@ justify-content: center;align-content: center;}
 
 .social-icon > a{
     width: 50px;
+    cursor: pointer;
 }
 
 /*footer Styles*/
@@ -208,14 +232,14 @@ justify-content: center;align-content: center;}
     grid-template-columns: 1fr 1fr;
     padding: 15px;
     padding-top: 0px;
-}
+align-items: center;align-content: center;height: fit-content;}
 
 .footer-left{
     display: flex;
     flex-direction: column;
     padding-left: 70px;
     align-items: center;
-}
+justify-self: center;align-self: center;}
 
 .footer-right{
     display: flex;
@@ -403,4 +427,81 @@ font-size: 50px;padding-bottom: 77px;}
 .generic-text{
     line-height: 2;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/*about page styles*/
+
+.abt-general-text-1{
+    padding-left: 375px;
+    padding-right: 375px;
+    text-align: center;
+    font-family: 'Georgia', Times, serif;
+    font-size: 20px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+}
+
+.abt-general-text-2{
+    padding-left: 375px;
+    padding-right: 375px;
+    text-align: center;
+    font-family: 'Georgia', Times, serif;
+    font-size: 20px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+}
+
+.abt-title{
+    font-size: 80px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-family: 'Poppins';
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+.abt-welcome-wrapper{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.runner{
+    position: absolute;
+    padding: 0px;
+    top: -145px;
+    right: 5px;
+    width: 650px;
+    height: auto;
+}
+
+.leaf-group-1{
+    position: relative;
+}
+.leaf-group-1 > * {
+    position: absolute;
+    transform: rotate(100deg);
+}
+
+.leaf-group-1 > .leaf-2 {
+    position: absolute;
+    transform: translateY(50px) rotate(100deg);
+
+}
+
+.leaf-group-2{
+    position: absolute;
+    right: 350px;
+    bottom: 600px;
+}
+.leaf-group-2 > * {
+    position: absolute;
+    transform: rotate(-70deg);
+}
+
+.leaf-group-2 > .leaf-2 {
+    position: absolute;
+    transform: translateY(50px) rotate(-70deg);
+
 }
