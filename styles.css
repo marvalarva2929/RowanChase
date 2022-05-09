@@ -269,21 +269,12 @@ justify-self: center;align-self: center;}
 
 color: #59527A;}
 
-/*Topic Block Styles*/
-.topic-block-wrapper{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 20px;
-}
-.topic-title{
-    justify-self: center;
-    align-self: center;
-}
 .topic-title-text{
-    align-self: center;
-    justify-self: center;
-    text-align: center;
+    text-align: right;
+}
+
+.topic-title-text{
+    justify-self: left;
     font-size: 30px; 
     font:bold;
     padding-bottom: 10px;
@@ -364,7 +355,7 @@ color: #59527A;}
 .topic-text-wrapper{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     justify-content: center;
 }
 .topic-text-wrapper > *{
