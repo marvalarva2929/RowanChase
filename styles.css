@@ -269,7 +269,9 @@ justify-self: center;align-self: center;}
 
 color: #59527A;}
 
-
+.topic-block-wrapper{
+    padding-top: 75px;
+}
 .topic-title-text{
     justify-self: left;
     font-size: 30px; 
