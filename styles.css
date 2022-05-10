@@ -269,9 +269,6 @@ justify-self: center;align-self: center;}
 
 color: #59527A;}
 
-.topic-title-text{
-    text-align: right;
-}
 
 .topic-title-text{
     justify-self: left;
@@ -332,6 +329,24 @@ color: #59527A;}
 .left-side{
     justify-self: left;
     margin: 0px;
+}
+
+.right-side > .topic-title{
+    justify-self: left;
+    text-align: left;
+}
+.left-side > .topic-title{
+    justify-self: right;
+    text-align: right;
+}
+
+.right-side > .topic-title-text{
+    justify-self: left;
+    text-align: left;
+}
+.left-side > .topic-title-text{
+    justify-self: right;
+    text-align: right;
 }
 
 .topic-img-wrapper > a > img{
